@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+     
+}
+
+.main-container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+}
+
+.main-container div {
+    border: 2px solid black;
+}
+
+.left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: #0ea5e9;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.top {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+}
+
+.middle {
+    grid-column: 2 / 5;
+    grid-row: 2 / 6;
+}
+
+.right {
+    grid-column: 5 / 6;
+    grid-row: 2 / 6;
+}
