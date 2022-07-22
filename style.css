@@ -2,19 +2,21 @@
 
 body {
     margin: 0;
+    padding: 0;
      
 }
-/* -----------------------------GRID-LAYOUT---------------------------------- */
+/* -------------------------MAIN-GRID-LAYOUT---------------------------------- */
 .main-container {
     display: grid;
     min-height: 100vh;
+    min-width: 0px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     
 }
 
 .main-container div {
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .left {
@@ -38,6 +40,38 @@ body {
     grid-column: 5 / 6;
     grid-row: 2 / 6;
 }
+
+/* --------------------------NESTED-GRID-LAYOUTS--------------------------- */
+
+.top {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+ .search-bar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .name-in-corner {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+ }
+
+ .main-name {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+ }
+
+ .new-upload-share {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+ }
+
 
 /* ---------------------------DASHBOARD-STYLES------------------------------ */
 
@@ -91,4 +125,94 @@ body {
 
 .settings {
     margin-top: 2.7rem;
+}
+
+.search-button-image {
+    max-width: 3rem;
+    max-height: 3rem;
+    background-color: inherit;
+    
+    
+}
+
+.search-button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: 100ms;
+   
+}
+
+.search-button:hover {
+    transform: scale(1.3);
+}
+
+.search-bar-input {
+    width: 75%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(250, 246, 246);
+    font-size: 1.5rem;
+    margin-left: 0.2rem;
+    padding-left: 25px;
+    
+}   
+
+.name-in-corner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+       
+}
+
+.name-in-corner p{
+    justify-self: start;
+
+}
+
+.avatar-small {
+    height: 3.5rem;
+    width: 3.5rem;
+    justify-self: center;
+   
+}
+
+.bell-icon {
+    max-width: 2rem;
+    max-height: 2rem;
+    justify-self: end;
+    
+}
+
+.main-name {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row: 1fr 1fr;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.avatar-big {
+    height: 5.8rem;
+    width: 5.8rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    justify-self: center;
+}
+
+.hi-there {
+    font-size: 1.2rem;
+    margin: 2px;
+    align-self: end;
+
+}
+
+.main-name-text {
+    align-self: start;
+    margin: 2px;
 }
