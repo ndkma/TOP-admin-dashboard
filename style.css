@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-body {
-    margin: 0;
-    padding: 0;
-     
+* {
+    box-sizing: border-box;
 }
+
+
+
+  body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+   
+  }
+    
+
 /* -------------------------MAIN-GRID-LAYOUT---------------------------------- */
 .main-container {
     display: grid;
-    min-height: 100vh;
-    min-width: 0px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    
-}
+    grid-template-columns: min-content;
+    grid-template-rows: repeat(5, max(20vh, 22%));
+   
+  }
 
 /* .main-container div {
     border: 1px solid black;
@@ -23,6 +30,7 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 6;
     background-color: #0ea5e9;
+    
     
 }
 
@@ -82,7 +90,7 @@ body {
 .dashboard-main-image {
     max-width: 4rem;
     max-height: 4rem;
-    margin-top: 0.6rem;
+    padding-top: 0.6rem;
     margin-bottom: 0.6rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
@@ -91,7 +99,7 @@ body {
 .dashboard-image {
     max-width: 3rem;
     max-height: 3rem;
-    margin-top: 0.6rem;
+    padding-top: 0.6rem;
     margin-bottom: 0.6rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
@@ -120,6 +128,7 @@ body {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     margin-right: 1rem;
+  
       
 }
 
@@ -174,6 +183,7 @@ body {
 
 .name-in-corner p{
     justify-self: start;
+   
 
 }
 
@@ -199,6 +209,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
+    margin-left: 5px;
     
 }
 
