@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
     margin: 0;
      
@@ -39,24 +41,47 @@ body {
 
 /* ---------------------------DASHBOARD-STYLES------------------------------ */
 
+.dashboard-main-image {
+    max-width: 4rem;
+    max-height: 4rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
 .dashboard-image {
-    max-width: 2rem;
-    max-height: 2rem;
-    margin: 0.6rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+   
     
 }
 
 .left h1 {
+    display: flex;
+    align-items: center;
     color: whitesmoke;
     margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
 }
 
 .left p {
     display: flex;
     align-items: center;
     color: whitesmoke;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 1rem;
       
 }
 
@@ -65,5 +90,5 @@ body {
 }
 
 .settings {
-    margin-top: 60px;
+    margin-top: 4rem;
 }
