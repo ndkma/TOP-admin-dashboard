@@ -11,7 +11,7 @@
     margin: 0;
     height: 100%;
    
-  }
+}
     
 
 /* -------------------------MAIN-GRID-LAYOUT---------------------------------- */
@@ -20,7 +20,7 @@
     grid-template-columns: min-content;
     grid-template-rows: repeat(5, max(20vh, 22%));
    
-  }
+}
 
 /* .main-container div {
     border: 1px solid black;
@@ -30,7 +30,6 @@
     grid-column: 1 / 2;
     grid-row: 1 / 6;
     background-color: #0ea5e9;
-    
     
 }
 
@@ -103,8 +102,7 @@
     margin-bottom: 0.6rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
-   
-    
+     
 }
 
 .left h1 {
@@ -128,8 +126,7 @@
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     margin-right: 1rem;
-  
-      
+       
 }
 
 .left p:hover {
@@ -144,8 +141,7 @@
     max-width: 3rem;
     max-height: 3rem;
     background-color: inherit;
-    
-    
+     
 }
 
 .search-button {
@@ -157,7 +153,7 @@
 }
 
 .search-button:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .search-bar-input {
@@ -184,7 +180,6 @@
 .name-in-corner p{
     justify-self: start;
    
-
 }
 
 .avatar-small {
@@ -240,8 +235,7 @@
     grid-template-columns: 1fr, 1fr, 1fr;
 }
 
-.new-button {
-    grid-column: 1 / 2;
+.new-upload-share button {
     height: 3rem;
     width: 7rem;
     justify-self: center;
@@ -253,35 +247,23 @@
     font-weight: bold;
     color: whitesmoke;
     border-style: none;
-    
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.new-upload-share button:hover {
+    transform: scale(1.1);
+}
+
+.new-button {
+    grid-column: 1 / 2;
 }
 
 .upload-button {
     grid-column: 2 / 3;
-    height: 3rem;
-    width: 7rem;
-    justify-self: center;
-    align-self: center;
-    background-color: #0ea5e9;    
-    border-radius: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: whitesmoke;
-    border-style: none;
 }
 
 .share-button {
     grid-column: 3 / 4;
-    height: 3rem;
-    width: 7rem;
-    justify-self: center;
-    align-self: center;
-    background-color: #0ea5e9;  
-    border-radius: 20px; 
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: whitesmoke;
-    border-style: none;
 }
+
